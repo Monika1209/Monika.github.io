@@ -1,0 +1,326 @@
+#body-header{
+    height: 100vh;
+    background-image: url(img/trip.jpg);
+    -webkit-background-size:cover;
+    background-size:cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-family:sans-serif;
+}
+
+.horizontal-list{
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+.horizontal-list li{
+    display: inline-block;
+    font-weight: 100;
+    font-size: 2rem;  
+}
+.horizontal-list li a{
+    color: black;
+}
+.nav-menu li a{
+    text-decoration: none;
+    transition: 0.5s;
+    border-bottom: 4s;
+    padding: 15px;
+}
+.text-center{
+   text-align: center;
+}
+.nav-menu li a:hover{
+    color:white;
+}
+#my-name{
+    font-size:3rem;
+    letter-spacing: 0.1rem;
+    color:black;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+.wrapper{
+    position: absolute;
+    top:50%;
+    left:15%;
+    transform: translate(10%, 10%);
+} 
+.wrapper h2{
+    padding: 0;
+    margin: 0;
+    color:black;
+    text-shadow: 0 2px 0 rgba(0,0,0,0.5);
+}
+.wrapper p{
+    color: black;
+    font-size: 18px;
+}
+.wrapper a{
+    background: crimson;
+    color: #000;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 30px;
+}
+span:before{
+    content:'';
+    animation:animates infinite 5s;
+}
+@keyframes animates{
+    0%{content:'Web Developer';}
+    25%{content:'Python Developer';}
+    50%{content:'Freelancer';}
+    75%{content:'Wordpress Developer';}
+    100%{content:'Video Editor';}
+}
+#name-social-container{
+    margin-top: 20vh;
+}
+.social-icons li a {
+    padding: 10px;
+    font-size:1rem;
+    color: black;
+    border-radius: 50%;
+    text-decoration: none;
+}
+.social-icons li a:hover{
+    color:red
+}
+
+.section{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #ddd;
+}
+.container{
+    width: 100%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
+.section .content{
+    float: left;
+    width: 55%;
+}
+.image-section{
+    float: right;
+    width: 40%;
+}
+.image-section img{
+    width: 90%;
+    height: auto;
+}
+.section .container .title h1{
+    text-transform: uppercase;
+    font-size: 28px;
+}
+.section .content h3{
+    margin-top: 20px;
+    color: #5d5d5d;
+    font-size: 21px;
+}
+.section .content p{
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.section .content .button a{
+    background-color: #3d3d3d;
+    padding: 12px 30px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+}
+.section .content .button a:hover{
+    background-color: #a52a2a;
+    color: #fff;
+}
+.section .content .social{
+    margin-top: 30px 30px;
+}
+.section .content .social i{
+    color: #a52a2a;
+    font-size: 25px;
+    padding: 20px 10px;
+}
+.section .social i:hover{
+    color: #3d3d3d;
+}
+#skill-section{
+    box-sizing:border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #2e2e2e;
+}
+.skill-bar{
+    position: relative;
+    width: 500px;
+}
+.skill-bar h2{
+    color: #fff;
+    font-size: 3rem;
+}
+.skill-bar .skills{
+    display: relative;
+    display: flex;
+    margin: 20px 0;
+    padding: 24px 10px 18px;
+    background: linear-gradient(#616161 0%,#333 10%, #222);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 2px solid #000;
+    transition: 0.5s;
+}
+
+.skill-bar .skills:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    z-index: 10;
+}
+.skill-bar .skills .Name{
+    position: relative;
+    width: 110px;
+    text-align: right;
+    color: #fff;
+    margin-top: -2px;
+    text-transform: uppercase;
+}
+.skill-bar .skills .value{
+    position: relative;
+    width: 40px;
+    text-align: left;
+    color: #fff;
+    margin-top: -2px;
+    text-transform: uppercase;
+}
+.skill-bar .skills .percent{
+    position: relative;
+    width: calc(100% - 150px);
+    height: 20px;
+    margin: 0 10px;
+    border-radius: 10px;
+    background: #151515;
+    box-shadow: inset(0 0 10px #000);
+    overflow: hidden;
+}
+.skill-bar .skills .percent .progress{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: inset 0 0 2px #000;
+    animation: animate 4s ease-in-out forwards;
+}
+@keyframes animate{
+    from{
+        width: 0;
+    }
+}
+.skill-bar .skills:nth-child(2) .percent .progress{
+    background: linear-gradient(45deg, #1fe6ff, #673ab7);
+}
+.skill-bar .skills:nth-child(3) .percent .progress{
+    background: linear-gradient(45deg, #3bc0ff, #33ff00);
+}
+.skill-bar .skills:nth-child(4) .percent .progress{
+    background: linear-gradient(45deg, #ffee54, #ff00ca);
+}
+.skill-bar .skills:nth-child(5) .percent .progress{
+    background: linear-gradient(45deg, #22ffde, #2196f3);
+}
+.skill-bar .skills:nth-child(6) .percent .progress{
+    background: linear-gradient(45deg, #3bc0ff, #ff00ca);
+}
+
+.contact{
+    width:80%;
+    margin: 50px auto;
+}
+.contact-box{
+    background: #fff;
+    display: flex;
+}
+.contact-left{
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+.contact-right{
+    flex-basis: 40%;
+    padding:40px;
+    background: #1c00b5;
+    color:#fff;
+}
+h1{
+    margin-bottom: 10px;
+}
+.contact p{
+    margin-bottom: 40px;
+}
+.input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.input-row .input-group{
+    flex-basis: 45%;
+}
+input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding-bottom: 5px;
+}
+textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+label{
+    margin-bottom: 6px;
+    display: block;
+    color: #1c00b5;
+}
+button{
+    background: #1c00b5;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px rgba(28, 0, 181, 0.3);
+}
+.contact-left h3{
+    color: #1c00b5;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.contact-right h3{
+    font-weight: 60;
+    margin-bottom: 30px;
+}
+tr td:first-child{
+    padding-right: 20px;
+}
+tr td{
+    padding-top: 20px;
+}
+
+
